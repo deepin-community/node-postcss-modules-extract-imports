@@ -1,0 +1,6 @@
+:local(.exportName) {
+  composes: importName  from   	"path/library.css";
+  composes: importName2 from   	"path/library.css";
+  composes: importName   importName2   from   "path/library.css";
+  other: rule;
+}

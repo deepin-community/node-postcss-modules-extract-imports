@@ -1,0 +1,11 @@
+:import("./b.css") {
+  i__imported_b_0: b;
+}
+:import("./c.css") {
+  i__imported_c_1: c;
+}
+.a {
+  composes: i__imported_b_0;
+  composes: i__imported_c_1;
+  color: #aaa;
+}

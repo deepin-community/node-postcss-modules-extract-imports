@@ -1,0 +1,5 @@
+version=4
+opts=\
+dversionmangle=auto,\
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-postcss-modules-extract-imports-$1/ \
+ https://github.com/css-modules/postcss-modules-extract-imports/tags .*/archive/.*/v?([\d\.]+).tar.gz

@@ -1,0 +1,10 @@
+:local(.exportName) {
+  composes: importName secondImport from 'path/library.css';
+  composes: importName from 'path/library2.css';
+  composes: importName2 from 'path/library.css';
+}
+:local(.exportName2) {
+  composes: secondImport from 'path/library.css';
+  composes: secondImport from 'path/library.css';
+  composes: thirdDep from 'path/dep3.css';
+}

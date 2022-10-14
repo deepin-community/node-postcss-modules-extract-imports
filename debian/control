@@ -1,0 +1,25 @@
+Source: node-postcss-modules-extract-imports
+Section: javascript
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Pirate Praveen <praveen@debian.org>
+Build-Depends: debhelper-compat (= 13)
+ , dh-sequence-nodejs
+ , node-postcss (>= 7.0.5~)
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-postcss-modules-extract-imports
+Vcs-Git: https://salsa.debian.org/js-team/node-postcss-modules-extract-imports.git
+Homepage: https://github.com/css-modules/postcss-modules-extract-imports
+Testsuite: autopkgtest-pkg-nodejs
+Rules-Requires-Root: no
+
+Package: node-postcss-modules-extract-imports
+Architecture: all
+Depends: ${misc:Depends}
+ , node-postcss (>= 7.0.5)
+Description: CSS Modules transform to extract local aliases for inline imports
+ PostCSS is a tool for transforming styles with JS plugins. These plugins can
+ lint your CSS, support variables and mixins, transpile future CSS syntax,
+ inline images, and more.
+ .
+ Node.js is an event-based server-side JavaScript engine.
